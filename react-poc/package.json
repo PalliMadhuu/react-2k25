@@ -3,12 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "simple-git-hooks": {
+    "pre-commit": "npx prettier --write . && git add ."
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "prepare": "husky install"
+    "prepare": "npx simple-git-hooks"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -26,6 +29,7 @@
     "husky": "^8.0.0",
     "lint-staged": "^15.4.3",
     "prettier": "^3.5.2",
+    "simple-git-hooks": "^2.11.1",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
     "vite": "^6.2.0"

@@ -1,8 +1,5 @@
-const HelloWorld=()=>{
-    return (
-        <div>lk
-            sdsjd</div>
-    )
+const HelloWorld = () => {
+  return <div>lk sdsjds</div>
 }
 
-export default HelloWorld;
+export default HelloWorld
